@@ -1,0 +1,49 @@
+/* fondo y titulos de las paginas*/
+.pag {
+    background-image: url(../multimedia/15364620_5597956.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  
+  .pag h1 {
+    @include flexbox (row,center,center,wrap,0px);
+    padding: 100px;
+    font-family:$font;
+    font-size: 90px;
+    color: rgb(58, 44, 32);
+  }
+}
+ 
+/* pisando bootstrap*/
+.row {
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  /* cards de productos */
+  .card {
+    border: 2px solid;
+    background-color: rgb(226, 175, 175);
+    border-color: rgb(43, 41, 41);
+    color: rgb(10, 10, 10);
+    border-radius: 5px;
+  }
+
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 2px;
+  }
+  
+  .card-title {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .card-text{
+    font-size: 20px;
+    padding: 18px;
+  }
+
+  
+  

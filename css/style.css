@@ -1,0 +1,391 @@
+/* reset */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+  font-family: "Oswald", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  align-items: center;
+}
+ul a {
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  color: rgb(37, 30, 30);
+}
+
+.navbar-brand {
+  background-image: url(../multimedia/Logo-removebg-preview.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  text-indent: -999;
+  height: 50px;
+  width: 50px;
+}
+
+/* modificaciones al menu de navegacion*/
+nav ul li {
+  list-style: none;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+nav ul li:hover {
+  border-bottom: 2px solid rgba(199, 77, 68, 0.822);
+  border-radius: 2px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 0px;
+  margin: 0px;
+  background-color: rgba(199, 77, 68, 0.822);
+}
+
+#logo {
+  width: 100px;
+  padding: 0%;
+  margin: 5%;
+  border: 0%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 41fr;
+  grid-template-rows: auto;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  min-height: 100vh;
+  max-height: 100%;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* fondo de inicio*/
+.fondo {
+  background-image: url(../multimedia/6982835_3324657.jpg);
+  background-position-x: 690px;
+  background-position-y: 10px;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  object-fit: contain;
+}
+
+/* titulo, subtitulo y parrafo de inicio */
+section article h1 {
+  font-family: "Kanit", sans-serif;
+  color: rgb(58, 44, 32);
+  font-size: 60px;
+  padding-top: 120px;
+  padding-left: 60px;
+  padding-bottom: 0%;
+  margin: 0%;
+}
+
+section article h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  margin: 0px;
+  padding-left: 110px;
+}
+
+section article p {
+  padding-right: 600px;
+  padding-left: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* fondo y titulos de las paginas*/
+.pag {
+  background-image: url(../multimedia/15364620_5597956.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.pag .pag h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0px;
+  padding: 100px;
+  font-family: "Kanit", sans-serif;
+  font-size: 90px;
+  color: rgb(58, 44, 32);
+}
+
+/*contenido de las paginas*/
+.subtitulo h2 {
+  font-family: "Kanit", sans-serif;
+  padding-top: 50px;
+  padding-left: 300px;
+  font-size: 55px;
+}
+
+.content {
+  display: flex;
+}
+
+.content img {
+  width: 450px;
+  height: 450px;
+  object-position: 10px;
+  position: absolute;
+}
+
+.content p {
+  display: flex;
+  padding: 50px 200px 20px 500px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* fondo y titulos de las paginas*/
+.pag {
+  background-image: url(../multimedia/15364620_5597956.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.pag .pag h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0px;
+  padding: 100px;
+  font-family: "Kanit", sans-serif;
+  font-size: 90px;
+  color: rgb(58, 44, 32);
+}
+
+/* pisando bootstrap*/
+.row {
+  margin: 0%;
+  padding: 0%;
+}
+
+/* cards de productos */
+.card {
+  border: 2px solid;
+  background-color: rgb(226, 175, 175);
+  border-color: rgb(43, 41, 41);
+  color: rgb(10, 10, 10);
+  border-radius: 5px;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.card-title {
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 20px;
+  padding: 18px;
+}
+
+/* fondo y titulos de las paginas*/
+.pag {
+  background-image: url(../multimedia/15364620_5597956.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.pag h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0px;
+  padding: 100px;
+  font-family: "Kanit", sans-serif;
+  font-size: 90px;
+  color: rgb(58, 44, 32);
+}
+
+/*contenido de las paginas*/
+.subtitulo h2 {
+  padding-top: 50px;
+  padding-left: 600px;
+  font-size: 55px;
+}
+
+.content img {
+  width: 450px;
+  height: 450px;
+  object-position: 10px;
+  position: absolute;
+}
+
+form {
+  text-align: right;
+  padding-right: 300px;
+  padding-bottom: 60px;
+  border-color: black;
+}
+
+/* fondo y titulos de las paginas*/
+.pag {
+  background-image: url(../multimedia/15364620_5597956.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.pag h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0px;
+  padding: 100px;
+  font-family: "Kanit", sans-serif;
+  font-size: 90px;
+  color: rgb(58, 44, 32);
+}
+
+/*contenido de las paginas*/
+.subtitulo h2 {
+  padding-top: 50px;
+  padding-left: 600px;
+  font-size: 55px;
+}
+
+.content {
+  display: flex;
+}
+
+.content img {
+  width: 450px;
+  height: 450px;
+  object-position: 10px;
+  position: absolute;
+}
+
+.content p {
+  padding: 50px 200px 50px 500px;
+}
+
+/* grilla de pagos*/
+.pagos {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1;
+  grid-template-areas: "bank coin credit wallet";
+  padding: 20px 0px 230px 500px;
+}
+
+.bi bi-cash-coin {
+  grid-area: coin;
+}
+
+.bi bi-bank {
+  grid-area: bank;
+}
+
+.bi bi-credit-card {
+  grid-area: credit;
+}
+
+.bi bi-wallet {
+  grid-area: wallet;
+}
+
+@media (max-width: 480px) {
+  .fondo {
+    background-position-x: 45px;
+    background-position-y: 80px;
+    background-size: 300px;
+    object-fit: cover;
+  }
+  section article h1 {
+    font-size: 30px;
+    padding-left: 45px;
+    padding-top: 5px;
+  }
+  section article h2 {
+    font-size: 20px;
+    padding-left: 100px;
+  }
+  section article p {
+    font-size: 23px;
+    margin-top: 290px;
+    padding: 50px;
+  }
+  .pag {
+    padding-bottom: 90px;
+    background-size: contain;
+  }
+  .pag h1 {
+    padding: 60px;
+    font-size: 45px;
+  }
+  .pagos {
+    grid-template-columns: 50%;
+    grid-template-rows: auto;
+    grid-template-areas: " bank" "coin" "credit" "wallet";
+    padding: 10px;
+    padding-left: 130px;
+    gap: 20px;
+  }
+  footer ul {
+    gap: 0px;
+    align-items: center;
+  }
+  .subtitulo h2 {
+    padding-left: 20px;
+    font-size: 30px;
+  }
+  .content img {
+    width: 350px;
+    height: 350px;
+    padding: 0px;
+    object-position: 50%;
+  }
+  .content p {
+    font-size: 25px;
+    padding: 350px 5px 50px 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .subtitulo h2 {
+    padding-left: 20px;
+    font-size: 50px;
+  }
+  form {
+    text-align: center;
+    padding: 400px 50px 50px 50px;
+    border-color: black;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,36 @@
+ul {
+    list-style-type: none;
+    text-align: center;
+    align-items: center;
+
+  a {
+    font-family:$font-2;
+    text-decoration: none;
+    color: rgb(37, 30, 30);
+  }
+
+}
+  
+  .navbar-brand {
+    background-image: url(../multimedia/Logo-removebg-preview.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-indent: -999;
+    height: 50px;
+    width: 50px;
+  }
+  
+/* modificaciones al menu de navegacion*/
+nav ul li {
+  list-style: none;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.4s;
+
+
+&:hover {
+  border-bottom:2px solid $color;
+  border-radius: 2px;
+}
+}

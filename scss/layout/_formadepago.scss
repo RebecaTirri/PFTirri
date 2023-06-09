@@ -1,0 +1,59 @@
+/* fondo y titulos de las paginas*/
+.pag {
+    background-image: url(../multimedia/15364620_5597956.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  .pag h1 {
+    @include flexbox (row,center,center,wrap,0px);
+    padding: 100px;
+    font-family:$font;
+    font-size: 90px;
+    color: rgb(58, 44, 32);
+  }
+  
+  /*contenido de las paginas*/
+  .subtitulo h2 {
+    padding-top: 50px;
+    padding-left: 600px;
+    font-size: 55px;
+  }
+  
+  .content {
+    display: flex;
+  }
+  
+  .content img {
+    width: 450px;
+    height: 450px;
+    object-position: 10px;
+    position: absolute;
+  }
+  
+  .content p {
+    padding: 50px 200px 50px 500px;
+  }
+
+  /* grilla de pagos*/
+.pagos {
+   @include grid (auto,1,"bank coin credit wallet");
+    padding: 20px 0px 230px 500px;
+  }
+  
+  .bi bi-cash-coin {
+    grid-area: coin;
+  }
+  
+  .bi bi-bank {
+    grid-area: bank;
+  }
+  
+  .bi bi-credit-card {
+    grid-area: credit;
+  }
+  
+  .bi bi-wallet {
+    grid-area: wallet;
+  }
+  

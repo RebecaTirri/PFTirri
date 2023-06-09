@@ -1,0 +1,16 @@
+// Imports base
+@import 'base/vars';
+@import 'base/reset';
+@import 'base/utilities';
+
+// Imports Components
+@import 'components/navbar';
+@import 'components/footer';
+
+// Imports Layout
+@import 'layout/index';
+@import 'layout/quienessomos';
+@import 'layout/productos';
+@import 'layout/contactanos';
+@import 'layout/formadepago';
+@import 'layout/medias';

@@ -1,0 +1,15 @@
+// Pie de pagina
+footer ul {
+@include flexbox (row,center,baseline,wrap,50px);
+    padding: 0px;
+    margin: 0px;
+    background-color:$color;
+  }
+  
+  #logo {
+    width: 100px;
+    padding: 0%;
+    margin: 5%;
+    border: 0%;
+  }
+  
