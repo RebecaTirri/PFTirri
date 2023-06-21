@@ -84,10 +84,10 @@ footer {
 /* fondo de inicio*/
 .fondo {
   background-image: url(../multimedia/mujer-con-torta.jpg);
-  background-position-x: 750px;
+  background-position-x: 710px;
   background-position-y: 1px;
   background-repeat: no-repeat;
-  background-size: 600px;
+  background-size: 550px;
   object-fit: contain;
 }
 
@@ -110,7 +110,7 @@ section article h2 {
 }
 
 section article p {
-  padding: 0px 900px 0px 40px;
+  padding: 0px 600px 0px 40px;
   text-align: center;
   font-size: 25px;
 }
