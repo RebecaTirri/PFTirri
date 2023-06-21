@@ -1,6 +1,6 @@
 /* fondo y titulos de las paginas*/
 .pag {
-    background-image: url(../multimedia/15364620_5597956.jpg);
+    background-image: url(../multimedia/fondo.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 
@@ -30,15 +30,28 @@
     width: 450px;
     height: 450px;
     object-position: 10px;
-    position: absolute;
   }
   
   .content p {
     display: flex;
     padding: 50px 200px 20px 500px;
+    margin-bottom: 185px;
     font-family:$font-2 ;
     font-weight: bold;
     font-size: 25px;
   }
-
-
+  
+    // Animación de las páginas
+    .pag__animacion{
+      animation-name:movimiento;
+      animation-iteration-count: 1;
+      animation-timing-function:linear;
+      animation-duration: 1s;
+      animation-delay: 0s;
+     }
+  
+     @keyframes movimiento{
+      0%{transform: translateY(-25%);}
+      50%{transform: translateY(-10%);}
+      100%{transform: translateY(1%);}
+     }

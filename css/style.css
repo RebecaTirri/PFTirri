@@ -34,9 +34,10 @@ nav ul li {
   border: 2px solid transparent;
   border-radius: 10px;
   transition: 0.4s;
+  font-size: 20px;
 }
 nav ul li:hover {
-  border-bottom: 2px solid rgba(199, 77, 68, 0.822);
+  border-bottom: 2px solid white;
   border-radius: 2px;
 }
 
@@ -53,7 +54,7 @@ footer ul {
 }
 
 #logo {
-  width: 100px;
+  width: 90px;
   padding: 0%;
   margin: 5%;
   border: 0%;
@@ -82,11 +83,11 @@ footer {
 
 /* fondo de inicio*/
 .fondo {
-  background-image: url(../multimedia/6982835_3324657.jpg);
-  background-position-x: 690px;
-  background-position-y: 10px;
+  background-image: url(../multimedia/mujer-con-torta.jpg);
+  background-position-x: 750px;
+  background-position-y: 1px;
   background-repeat: no-repeat;
-  background-size: 500px;
+  background-size: 600px;
   object-fit: contain;
 }
 
@@ -95,7 +96,7 @@ section article h1 {
   font-family: "Kanit", sans-serif;
   color: rgb(58, 44, 32);
   font-size: 60px;
-  padding-top: 120px;
+  padding-top: 180px;
   padding-left: 60px;
   padding-bottom: 0%;
   margin: 0%;
@@ -109,15 +110,36 @@ section article h2 {
 }
 
 section article p {
-  padding-right: 600px;
-  padding-left: 20px;
+  padding: 0px 900px 0px 40px;
   text-align: center;
   font-size: 25px;
 }
 
+.animacion {
+  animation-name: animacion;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+@keyframes animacion {
+  0% {
+    transform: translateY(10%);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+  70% {
+    transform: translateY(3%);
+  }
+  100% {
+    transform: translateY(1%);
+  }
+}
 /* fondo y titulos de las paginas*/
 .pag {
-  background-image: url(../multimedia/15364620_5597956.jpg);
+  background-image: url(../multimedia/fondo.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -150,20 +172,39 @@ section article p {
   width: 450px;
   height: 450px;
   object-position: 10px;
-  position: absolute;
 }
 
 .content p {
   display: flex;
   padding: 50px 200px 20px 500px;
+  margin-bottom: 185px;
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   font-size: 25px;
 }
 
+.pag__animacion {
+  animation-name: movimiento;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+@keyframes movimiento {
+  0% {
+    transform: translateY(-25%);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(1%);
+  }
+}
 /* fondo y titulos de las paginas*/
 .pag {
-  background-image: url(../multimedia/15364620_5597956.jpg);
+  background-image: url(../multimedia/fondo.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -199,6 +240,12 @@ section article p {
   height: 250px;
   object-fit: cover;
   border-radius: 2px;
+  transition: 1s;
+  opacity: 50%;
+}
+.card-img-top:hover {
+  opacity: 100%;
+  height: 280px;
 }
 
 .card-title {
@@ -212,9 +259,28 @@ section article p {
   padding: 18px;
 }
 
+.pag__animacion {
+  animation-name: movimiento;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+@keyframes movimiento {
+  0% {
+    transform: translateY(-25%);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(1%);
+  }
+}
 /* fondo y titulos de las paginas*/
 .pag {
-  background-image: url(../multimedia/15364620_5597956.jpg);
+  background-image: url(../multimedia/fondo.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -253,9 +319,28 @@ form {
   border-color: black;
 }
 
+.pag__animacion {
+  animation-name: movimiento;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+@keyframes movimiento {
+  0% {
+    transform: translateY(-25%);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(1%);
+  }
+}
 /* fondo y titulos de las paginas*/
 .pag {
-  background-image: url(../multimedia/15364620_5597956.jpg);
+  background-image: url(../multimedia/fondo.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -292,7 +377,7 @@ form {
 }
 
 .content p {
-  padding: 50px 200px 50px 500px;
+  padding: 50px 200px 0px 500px;
 }
 
 /* grilla de pagos*/
@@ -301,7 +386,7 @@ form {
   grid-template-columns: auto;
   grid-template-rows: 1;
   grid-template-areas: "bank coin credit wallet";
-  padding: 20px 0px 230px 500px;
+  padding: 0px 0px 230px 500px;
 }
 
 .bi bi-cash-coin {
@@ -320,6 +405,25 @@ form {
   grid-area: wallet;
 }
 
+.pag__animacion {
+  animation-name: movimiento;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+@keyframes movimiento {
+  0% {
+    transform: translateY(-25%);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(1%);
+  }
+}
 @media (max-width: 480px) {
   .fondo {
     background-position-x: 45px;
@@ -327,14 +431,17 @@ form {
     background-size: 300px;
     object-fit: cover;
   }
+  nav ul li:hover {
+    border-bottom: 2px solid rgba(199, 77, 68, 0.822);
+  }
   section article h1 {
     font-size: 30px;
-    padding-left: 45px;
+    padding-left: 30px;
     padding-top: 5px;
   }
   section article h2 {
     font-size: 20px;
-    padding-left: 100px;
+    padding-left: 85px;
   }
   section article p {
     font-size: 23px;
@@ -374,6 +481,7 @@ form {
   .content p {
     font-size: 25px;
     padding: 350px 5px 50px 20px;
+    margin: 0px;
     align-items: center;
     justify-content: center;
   }
@@ -385,6 +493,23 @@ form {
     text-align: center;
     padding: 400px 50px 50px 50px;
     border-color: black;
+  }
+  .card-img-top {
+    opacity: 100%;
+  }
+  @keyframes animacion {
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    70% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
   }
 }
 

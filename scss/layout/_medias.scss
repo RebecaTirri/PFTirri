@@ -6,15 +6,19 @@
       object-fit: cover;
     }
 
+    nav ul li:hover {
+      border-bottom:2px solid $color;
+    }
+
     section article h1 {
       font-size: 30px;
-      padding-left: 45px;
+      padding-left: 30px;
       padding-top: 5px;
     }
 
     section article h2 { 
       font-size: 20px;
-      padding-left: 100px;
+      padding-left: 85px;
     }
 
     section article p {
@@ -62,6 +66,7 @@
     .content p {
       font-size: 25px;
       padding: 350px 5px 50px 20px;
+      margin: 0px;
       align-items: center;
       justify-content: center;
     }
@@ -76,5 +81,15 @@
       padding: 400px 50px 50px 50px;
       border-color: black;
     }
-  
+
+   .card-img-top {
+     opacity: 100%;
+    }
+
+    @keyframes animacion{
+      0%{transform: translateY(0%);}
+      50%{transform: translateY(0px);}
+      70%{transform: translateY(0%);}
+      100%{transform: translateY(0%);}
+    }
   }

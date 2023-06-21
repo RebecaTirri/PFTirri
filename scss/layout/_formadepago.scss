@@ -1,6 +1,6 @@
 /* fondo y titulos de las paginas*/
 .pag {
-    background-image: url(../multimedia/15364620_5597956.jpg);
+    background-image: url(../multimedia/fondo.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -32,13 +32,13 @@
   }
   
   .content p {
-    padding: 50px 200px 50px 500px;
+    padding: 50px 200px 0px 500px;
   }
 
   /* grilla de pagos*/
 .pagos {
    @include grid (auto,1,"bank coin credit wallet");
-    padding: 20px 0px 230px 500px;
+    padding: 0px 0px 230px 500px;
   }
   
   .bi bi-cash-coin {
@@ -56,4 +56,19 @@
   .bi bi-wallet {
     grid-area: wallet;
   }
+
+ // Animación de las páginas
+ .pag__animacion{
+   animation-name:movimiento;
+   animation-iteration-count: 1;
+   animation-timing-function:linear;
+   animation-duration: 1s;
+   animation-delay: 0s;
+   }
+  
+   @keyframes movimiento{
+   0%{transform: translateY(-25%);}
+   50%{transform: translateY(-10%);}
+   100%{transform: translateY(1%);}
+   }
   
